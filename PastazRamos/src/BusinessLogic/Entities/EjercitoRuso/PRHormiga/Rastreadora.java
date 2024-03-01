@@ -1,10 +1,11 @@
-package BusinessLogic.Entities.EjercitoRuso;
+package BusinessLogic.Entities.EjercitoRuso.PRHormiga;
 
 public class Rastreadora extends Hormiga {
     private int fuerza;
     private int rapidez;
-    public Rastreadora(String tipo) {
-        super(2, tipo);
+    //El codigo Unico se lo da al momento de crear a la Hormiga en la clase HKGD en el bucle for es el "1000+i"
+    public Rastreadora(String tipo, int CodigoUnico) {
+        super(2, tipo, CodigoUnico);
     }
     public int getFuerza() {
         return fuerza;

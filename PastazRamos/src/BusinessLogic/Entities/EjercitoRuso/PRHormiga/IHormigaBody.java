@@ -1,4 +1,4 @@
-package BusinessLogic.Entities.EjercitoRuso;
+package BusinessLogic.Entities.EjercitoRuso.PRHormiga;
 
 public interface IHormigaBody {
     public Boolean ala= true; 

@@ -36,7 +36,15 @@ public class RegistroHormigasDAO extends SQLiteDataHelper implements IDAO<Regist
             Statement  stmt = conn.createStatement();   
             ResultSet rs   = stmt.executeQuery(query);  
             while (rs.next()) {
-                oS = new RegistroHormigasDTO(rs.getInt(1), rs.getInt(2), rs.getInt(3), rs.getString(4), rs.getString(5), rs.getString(6), rs.getString(7), rs.getString(8), rs.getString(9));
+                oS = new RegistroHormigasDTO(rs.getInt(1)
+                                            ,rs.getInt(2)
+                                            ,rs.getInt(3)
+                                            ,rs.getString(4)
+                                            ,rs.getString(5)
+                                            ,rs.getString(6)
+                                            ,rs.getString(7)
+                                            ,rs.getString(8)
+                                            ,rs.getString(9));
             }
         } 
         catch (SQLException e) {
@@ -54,7 +62,15 @@ public List<RegistroHormigasDTO> readAll() throws Exception {
         Statement  stmt = conn.createStatement();   
         ResultSet rs   = stmt.executeQuery(query);  
         while (rs.next()) {
-            RegistroHormigasDTO s = new RegistroHormigasDTO(rs.getInt(1), rs.getInt(2), rs.getInt(3), rs.getString(4), rs.getString(5), rs.getString(6), rs.getString(7), rs.getString(8), rs.getString(9));
+            RegistroHormigasDTO s = new RegistroHormigasDTO( rs.getInt(1)
+                                                            ,rs.getInt(2)
+                                                            ,rs.getInt(3)
+                                                            ,rs.getString(4)
+                                                            ,rs.getString(5)
+                                                            ,rs.getString(6)
+                                                            ,rs.getString(7)
+                                                            ,rs.getString(8)
+                                                            ,rs.getString(9));
             lst.add(s);
         }
     } 

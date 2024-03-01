@@ -1,10 +1,10 @@
 package BusinessLogic.Entities.AntBot;
 
 import BusinessLogic.Entities.IABot;
-import BusinessLogic.Entities.EjercitoRuso.IHormigaBody;
-import BusinessLogic.Entities.EjercitoRuso.Rastreadora;
-import BusinessLogic.Entities.EjercitoRuso.Soldado;
-import BusinessLogic.Entities.EjercitoRuso.Zangano;
+import BusinessLogic.Entities.EjercitoRuso.PRHormiga.IHormigaBody;
+import BusinessLogic.Entities.EjercitoRuso.PRHormiga.Rastreadora;
+import BusinessLogic.Entities.EjercitoRuso.PRHormiga.Soldado;
+import BusinessLogic.Entities.EjercitoRuso.PRHormiga.Zangano;
 
 public class AntBot extends IABot implements IHormigaBody {
     private Alas eAlas; 
@@ -19,20 +19,20 @@ public class AntBot extends IABot implements IHormigaBody {
 
     public AntBot (IABot iaBot){
         super (iaBot);
-     eAlas = new Alas(); 
-     eAntena = new Antena();
-     eCamara = new Camara(); 
-     ePata= new Pata(); 
-     eFuntePoder= new FuntePoder(); 
-
-    if(AntBot.ala)
-        System.out.println("ala");
-    if(AntBot.pata)
-        System.out.println("pata");
-    if(AntBot.cabeza)
-        System.out.println("cabeza");
-    if(AntBot.tronco)
-        System.out.println("tronco");
+        eAlas = new Alas(); 
+        eAntena = new Antena();
+        eCamara = new Camara(); 
+        ePata= new Pata(); 
+        eFuntePoder= new FuntePoder(); 
+        
+        if(AntBot.ala)
+            System.out.println("ala");
+        if(AntBot.pata)
+            System.out.println("pata");
+        if(AntBot.cabeza)
+            System.out.println("cabeza");
+        if(AntBot.tronco)
+            System.out.println("tronco");
     }
 
     public Boolean inicializar(){
@@ -40,16 +40,16 @@ public class AntBot extends IABot implements IHormigaBody {
     }
 
     public void unirseSoldado(Soldado soldado){
-    Pata.Correr();
-    Pata.Saltar();
+        Pata.Correr();
+        Pata.Saltar();
     }
     public void unirseZangano(Zangano zangano){
-    Alas.Volar();
-    Pata.Correr();
-    Pata.Saltar();
+        Alas.Volar();
+        Pata.Correr();
+        Pata.Saltar();
     }
     public void unirseRastreadora(Rastreadora rastreadora){
-    Pata.Correr();
-    Pata.Saltar();
+        Pata.Correr();
+        Pata.Saltar();
     }
 }

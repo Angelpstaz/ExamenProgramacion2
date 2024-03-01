@@ -14,7 +14,12 @@ public class TenazaDTO {
         this.nombre = nombre;
     }
 
-    public TenazaDTO(int idTenaza, String nombre, String estado, String observacion, String fechaCrea, String fechaModifica) {
+    public TenazaDTO(int    idTenaza
+                    ,String nombre
+                    ,String estado
+                    ,String observacion
+                    ,String fechaCrea
+                    ,String fechaModifica) {
         this.idTenaza = idTenaza;
         this.nombre = nombre;
         this.estado = estado;

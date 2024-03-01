@@ -1,9 +1,9 @@
-package BusinessLogic.Entities.EjercitoRuso;
+package BusinessLogic.Entities.EjercitoRuso.PRExamen;
 
-abstract class PRalimento {
+abstract class PRAlimento {
     private String prAlimento;
     
-    public PRalimento(String prAlimento) {
+    public PRAlimento(String prAlimento) {
         this.prAlimento = prAlimento;
     }
 

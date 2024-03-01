@@ -25,7 +25,12 @@ public class CircuitoAnilladoDAO extends SQLiteDataHelper implements IDAO<Circui
             Statement  stmt = conn.createStatement();   
             ResultSet rs   = stmt.executeQuery(query);  
             while (rs.next()) {
-                oS = new CircuitoAnilladoDTO(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getString(6));
+                oS = new CircuitoAnilladoDTO(rs.getInt(1)
+                                            ,rs.getString(2)
+                                            ,rs.getString(3)
+                                            ,rs.getString(4)
+                                            ,rs.getString(5)
+                                            ,rs.getString(6));
             }
         } 
         catch (SQLException e) {
@@ -46,7 +51,12 @@ public class CircuitoAnilladoDAO extends SQLiteDataHelper implements IDAO<Circui
             Statement  stmt = conn.createStatement();   
             ResultSet rs   = stmt.executeQuery(query);  
             while (rs.next()) {
-                CircuitoAnilladoDTO s = new CircuitoAnilladoDTO(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getString(6));
+                CircuitoAnilladoDTO s = new CircuitoAnilladoDTO( rs.getInt(1)
+                                                                ,rs.getString(2)
+                                                                ,rs.getString(3)
+                                                                ,rs.getString(4)
+                                                                ,rs.getString(5)
+                                                                ,rs.getString(6));
                 lst.add(s);
             }
         } 

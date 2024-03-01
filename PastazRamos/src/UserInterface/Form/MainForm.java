@@ -7,9 +7,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 import BusinessLogic.CuentaAdminBL;
-
-
-import BusinessLogic.Entities.EjercitoRuso.Hormiga;
+import BusinessLogic.Entities.EjercitoRuso.PRHormiga.Hormiga;
 import DataAccess.*;
 
 

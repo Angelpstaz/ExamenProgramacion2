@@ -86,7 +86,15 @@ public class RegistroHormigasDTO {
 
     public RegistroHormigasDTO() { }
 
-    public RegistroHormigasDTO(Integer idRegistroHormigas, Integer idHormiga, Integer idHormigaTipo, String comio, String recogio, String estado, String observacion, String fechaCrea, String fechaModifica) {
+    public RegistroHormigasDTO(  Integer idRegistroHormigas
+                                ,Integer idHormiga
+                                ,Integer idHormigaTipo
+                                ,String  comio
+                                ,String  recogio
+                                ,String  estado
+                                ,String  observacion
+                                ,String  fechaCrea
+                                ,String  fechaModifica) {
         this.idRegistroHormigas = idRegistroHormigas;
         this.idHormiga = idHormiga;
         this.idHormigaTipo = idHormigaTipo;
@@ -97,7 +105,11 @@ public class RegistroHormigasDTO {
         this.fechaCrea = fechaCrea;
         this.fechaModifica = fechaModifica;
     }
-    public RegistroHormigasDTO(Integer idHormiga, Integer idHormigaTipo, String comio, String recogio, String estado) {
+    public RegistroHormigasDTO(  Integer idHormiga
+                                ,Integer idHormigaTipo
+                                ,String  comio
+                                ,String  recogio
+                                ,String  estado) {
         this.idHormiga = idHormiga;
         this.idHormigaTipo = idHormigaTipo;
         this.comio = comio;

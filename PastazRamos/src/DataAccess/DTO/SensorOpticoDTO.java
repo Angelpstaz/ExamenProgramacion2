@@ -14,7 +14,12 @@ public class SensorOpticoDTO {
         this.nombre = nombre;
     }
 
-    public SensorOpticoDTO(int idSensorOptico, String nombre, String estado, String observacion, String fechaCrea, String fechaModifica) {
+    public SensorOpticoDTO(  int    idSensorOptico
+                            ,String nombre
+                            ,String estado
+                            ,String observacion
+                            ,String fechaCrea
+                            ,String fechaModifica ) {
         this.idSensorOptico = idSensorOptico;
         this.nombre = nombre;
         this.estado = estado;

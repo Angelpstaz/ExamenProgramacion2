@@ -24,7 +24,12 @@ public class AlaDAO extends SQLiteDataHelper implements IDAO<AlaDTO> {
             Statement  stmt = conn.createStatement();   
             ResultSet rs   = stmt.executeQuery(query);  
             while (rs.next()) {
-                oS = new AlaDTO(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getString(6));
+                oS = new AlaDTO( rs.getInt(1)
+                                ,rs.getString(2)
+                                ,rs.getString(3)
+                                ,rs.getString(4)
+                                ,rs.getString(5)
+                                ,rs.getString(6));
             }
         } 
         catch (SQLException e) {
@@ -45,7 +50,12 @@ public class AlaDAO extends SQLiteDataHelper implements IDAO<AlaDTO> {
             Statement  stmt = conn.createStatement();   
             ResultSet rs   = stmt.executeQuery(query);  
             while (rs.next()) {
-                AlaDTO s = new AlaDTO(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getString(6));
+                AlaDTO s = new AlaDTO(rs.getInt(1)
+                                    , rs.getString(2)
+                                    , rs.getString(3)
+                                    , rs.getString(4)
+                                    , rs.getString(5)
+                                    , rs.getString(6));
                 lst.add(s);
             }
         } 

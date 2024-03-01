@@ -24,10 +24,16 @@ public class CamaraDAO extends SQLiteDataHelper implements IDAO<CamaraDTO> {
             Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery(query);
             while (rs.next()) {
-                oS = new CamaraDTO(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getString(6));
+                oS = new CamaraDTO(  rs.getInt(1)
+                                    ,rs.getString(2)
+                                    ,rs.getString(3)
+                                    ,rs.getString(4)
+                                    ,rs.getString(5)
+                                    ,rs.getString(6));
             }
         } catch (SQLException e) {
-            throw new AppException(e.getMessage(), getClass().getName(), "readBy()");
+            throw new AppException(e.getMessage()
+                                ,getClass().getName(), "readBy()");
         }
         return oS;
     }
@@ -43,7 +49,12 @@ public class CamaraDAO extends SQLiteDataHelper implements IDAO<CamaraDTO> {
             Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery(query);
             while (rs.next()) {
-                CamaraDTO s = new CamaraDTO(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getString(6));
+                CamaraDTO s = new CamaraDTO( rs.getInt(1)
+                                            ,rs.getString(2)
+                                            ,rs.getString(3)
+                                            ,rs.getString(4)
+                                            ,rs.getString(5)
+                                            ,rs.getString(6));
                 lst.add(s);
             }
         } catch (SQLException e) {

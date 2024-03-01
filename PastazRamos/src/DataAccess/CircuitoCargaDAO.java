@@ -25,7 +25,12 @@ public class CircuitoCargaDAO extends SQLiteDataHelper implements IDAO<CircuitoC
             Statement  stmt = conn.createStatement();   
             ResultSet rs   = stmt.executeQuery(query);  
             while (rs.next()) {
-                oS = new CircuitoCargaDTO(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getString(6));
+                oS = new CircuitoCargaDTO(rs.getInt(1)
+                                        , rs.getString(2)
+                                        , rs.getString(3)
+                                        , rs.getString(4)
+                                        , rs.getString(5)
+                                        , rs.getString(6));
             }
         } 
         catch (SQLException e) {
@@ -46,7 +51,12 @@ public class CircuitoCargaDAO extends SQLiteDataHelper implements IDAO<CircuitoC
             Statement  stmt = conn.createStatement();   
             ResultSet rs   = stmt.executeQuery(query);  
             while (rs.next()) {
-                CircuitoCargaDTO s = new CircuitoCargaDTO(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getString(6));
+                CircuitoCargaDTO s = new CircuitoCargaDTO(rs.getInt(1)
+                                                        , rs.getString(2)
+                                                        , rs.getString(3)
+                                                        , rs.getString(4)
+                                                        , rs.getString(5)
+                                                        , rs.getString(6));
                 lst.add(s);
             }
         } 

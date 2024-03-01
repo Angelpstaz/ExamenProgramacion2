@@ -1,6 +1,6 @@
-package BusinessLogic.Entities.EjercitoRuso;
+package BusinessLogic.Entities.EjercitoRuso.PRExamen;
 
-public class PRHerbivoro extends PRalimento {
+public class PRHerbivoro extends PRAlimento {
     
     public String getPRNombreAlimento() {
         return prNombreAlimento;

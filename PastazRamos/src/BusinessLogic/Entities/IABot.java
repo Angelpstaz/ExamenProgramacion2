@@ -1,6 +1,6 @@
 package BusinessLogic.Entities;
 
-import BusinessLogic.Entities.EjercitoRuso.Hormiga;
+import BusinessLogic.Entities.EjercitoRuso.PRHormiga.Hormiga;
 
 public class IABot {
 
